@@ -1,0 +1,311 @@
+<!-- HTML é uma linguagem de marcação usada para estruturar o conteúdo de páginas web, definindo elementos como textos, imagens, links e seções.-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEVEN | TREINAMENTO E DESENVOLVIMENTO</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts: Cormorant Garamond (display) + DM Sans (corpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <!-- Logo -->
+      <a href="#inicio" class="nav-logo">
+        <img src="logoseven.png" alt="SEVEN" class="logo">
+        <span class="logo-dot"></span>
+      </a>
+
+      <!-- Links de navegação desktop -->
+      <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
+        <a href="#inicio"   class="nav-link">Início</a>
+        <a href="#sobre"    class="nav-link">Sobre</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#contato"  class="nav-link nav-link--cta">Contato</a>
+      </nav>
+
+      <!-- Botão hambúrguer (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="inicio">
+    <!-- Decoração geométrica de fundo -->
+    <div class="hero-bg-shape hero-bg-shape--1" aria-hidden="true"></div>
+    <div class="hero-bg-shape hero-bg-shape--2" aria-hidden="true"></div>
+    <div class="hero-noise" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <!-- Pré-título -->
+      <p class="hero-pretitle" data-animate>ACESSORIA, TREINAMENTO E DESENVOLVIMENTO</p>
+
+      <!-- Título principal -->
+      <h1 class="hero-title" data-animate>
+        Impulsionando<br />
+        <em>resultados</em><br />
+        para sua empresa.
+      </h1>
+
+      <!-- Subtítulo -->
+      <p class="hero-sub" data-animate>
+        Estratégia, método e visão para levar seu negócio<br class="break-desktop" />
+        ao próximo nível — com consistência e clareza.
+      </p>
+
+      <!-- CTA -->
+      <div class="hero-actions" data-animate>
+        <a href="#contato" class="btn btn--primary">Fale conosco</a>
+        <a href="#servicos" class="btn btn--ghost">Nossos serviços</a>
+      </div>
+    </div>
+
+    <!-- Indicador de scroll -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span class="scroll-label">scroll</span>
+    </div>
+  </section>
+
+  <!-- ========== SOBRE ========== -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+
+        <!-- Coluna de texto -->
+        <div class="sobre-text" data-animate>
+          <p class="section-label">Quem somos</p>
+          <h2 class="section-title">
+            Transformamos complexidade<br />em <em>estratégia clara.</em>
+          </h2>
+          <p class="sobre-body">
+            A <strong>SEVEN Consultoria</strong> nasceu da convicção de que empresas bem orientadas crescem com mais segurança e menos desperdício. Reunimos especialistas com décadas de vivência em mercados desafiadores para oferecer diagnósticos honestos e planos de ação que funcionam na prática.
+          </p>
+          <p class="sobre-body">
+            Atendemos desde startups em aceleração até corporações em reestruturação, sempre com o mesmo compromisso: entregar clareza onde havia incerteza, e resultados onde havia estagnação.
+          </p>
+          <!-- Números de impacto -->
+          <ul class="sobre-stats" aria-label="Nossos números">
+            <li>
+              <span class="stat-num">+200</span>
+              <span class="stat-label">empresas atendidas</span>
+            </li>
+            <li>
+              <span class="stat-num">+15</span>
+              <span class="stat-label">anos de mercado</span>
+            </li>
+            <li>
+              <span class="stat-num">97%</span>
+              <span class="stat-label">índice de satisfação</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Coluna visual -->
+        <div class="sobre-visual" data-animate>
+          <div class="sobre-card sobre-card--main">
+            <p class="sobre-card__quote">
+              "A clareza estratégica é o ativo mais subestimado de qualquer organização."
+            </p>
+            <span class="sobre-card__author">— Equipe SEVEN</span>
+          </div>
+          <div class="sobre-card sobre-card--accent" aria-hidden="true"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVIÇOS ========== -->
+  <section class="servicos" id="servicos">
+    <div class="container">
+
+      <div class="section-header" data-animate>
+        <p class="section-label">O que fazemos</p>
+        <h2 class="section-title">Nossos <em>serviços</em></h2>
+      </div>
+
+      <div class="servicos-grid">
+
+        <!-- Card 1 -->
+        <article class="servico-card" data-animate>
+          <div class="servico-icon" aria-hidden="true">
+            <!-- Ícone SVG inline: alvo estratégico -->
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="16" cy="16" r="8"  stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="16" cy="16" r="2.5" fill="currentColor"/>
+              <line x1="16" y1="2" x2="16" y2="8"  stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="30" y1="16" x2="24" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="servico-num"></span>
+          <h3 class="servico-title">Consultoria Estratégica</h3>
+          <p class="servico-desc">
+            Diagnóstico completo do negócio, definição de objetivos de longo prazo e construção de um roadmap estratégico adaptado à sua realidade e mercado.
+          </p>
+          <ul class="servico-features">
+            <li>Análise de posicionamento competitivo</li>
+            <li>Planejamento de crescimento sustentável</li>
+            <li>Governança e tomada de decisão</li>
+          </ul>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="servico-card" data-animate>
+          <div class="servico-icon" aria-hidden="true">
+            <!-- Ícone SVG inline: engrenagem / fluxo -->
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 10h14M5 16h22M13 22h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="22" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="10" cy="22" r="3" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <span class="servico-num">02</span>
+          <h3 class="servico-title">Otimização de Processos</h3>
+          <p class="servico-desc">
+            Mapeamento e redesenho de fluxos operacionais para eliminar gargalos, reduzir custos e aumentar a produtividade das equipes com metodologias ágeis.
+          </p>
+          <ul class="servico-features">
+            <li>Mapeamento de fluxo de valor (VSM)</li>
+            <li>Automação e digitalização de processos</li>
+            <li>Gestão da mudança organizacional</li>
+          </ul>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="servico-card" data-animate>
+          <div class="servico-icon" aria-hidden="true">
+            <!-- Ícone SVG inline: gráfico de barras -->
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4"  y="18" width="6" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="13" y="10" width="6" height="18" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="22" y="4"  width="6" height="24" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="2" y1="30" x2="30" y2="30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="servico-num"></span>
+          <h3 class="servico-title">Análise de Desempenho</h3>
+          <p class="servico-desc">
+            Implantação de painéis de KPIs, análise de dados estratégicos e relatórios executivos para que sua liderança tome decisões baseadas em evidências.
+          </p>
+          <ul class="servico-features">
+            <li>Definição e monitoramento de KPIs</li>
+            <li>Business Intelligence aplicado</li>
+            <li>Relatórios e dashboards executivos</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTATO ========== -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="contato-grid">
+
+        <!-- Informações de contato -->
+        <div class="contato-info" data-animate>
+          <p class="section-label">Entre em contato</p>
+          <h2 class="section-title">Vamos conversar<br />sobre o seu <em>negócio.</em></h2>
+          <p class="contato-body">
+            Preencha o formulário ao lado e entraremos em contato em até 24 horas.
+          </p>
+          <address class="contato-address">
+            <p>📍 Caxias do Sul, RS — Brasil</p>
+            <p>✉️ marciocoltro.seven@gmail.com</p>
+            <p>📞 (54) 99980-1091</p>
+          </address>
+        </div>
+
+        <!-- Formulário -->
+        <div class="contato-form-wrap" data-animate>
+          <form class="contato-form" id="contatoForm" novalidate>
+
+            <!-- Campo Nome -->
+            <div class="form-group">
+              <label for="nome" class="form-label">Nome completo</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                class="form-input"
+                placeholder="Seu nome"
+                autocomplete="name"
+              />
+              <span class="form-error" id="erroNome" aria-live="polite"></span>
+            </div>
+
+            <!-- Campo Email -->
+            <div class="form-group">
+              <label for="email" class="form-label">E-mail corporativo</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="seu@empresa.com.br"
+                autocomplete="email"
+              />
+              <span class="form-error" id="erroEmail" aria-live="polite"></span>
+            </div>
+
+            <!-- Campo Mensagem -->
+            <div class="form-group">
+              <label for="mensagem" class="form-label">Como podemos ajudar?</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                class="form-input form-textarea"
+                placeholder="Descreva brevemente o desafio do seu negócio..."
+                rows="5"
+              ></textarea>
+              <span class="form-error" id="erroMensagem" aria-live="polite"></span>
+            </div>
+
+            <!-- Botão de envio -->
+            <button type="submit" class="btn btn--primary btn--full" id="btnEnviar">
+              <span class="btn-text">Enviar mensagem</span>
+              <span class="btn-icon" aria-hidden="true">→</span>
+            </button>
+
+            <!-- Feedback de sucesso -->
+            <div class="form-success" id="formSucesso" role="alert" aria-live="polite" hidden>
+              ✓ Mensagem enviada! Entraremos em contato em breve.
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#inicio" class="footer-logo">SEVEN<span class="logo-dot"></span></a>
+      <p class="footer-copy">© <span id="anoAtual"></span> SEVEN Consultoria Empresarial. Todos os direitos reservados.</p>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
